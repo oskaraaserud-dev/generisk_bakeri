@@ -63,7 +63,7 @@ label {
 
 input, textarea {
     display: block;
-    width: 90%;
+    width: 100%;
     padding: 8px;
     margin-top: 5px;
 }
@@ -171,7 +171,11 @@ footer a {
 }
 
 @media (max-width: 600px) {
-  /* Større tekst på mobil */
+  input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
   body {
     font-size: 18px;
   }
