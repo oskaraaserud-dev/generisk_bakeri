@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-    <link rel="stylesheet" href="CSS/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bli kjent med glaSUR Bakeri i Lunner — vår historie, hva som gjør oss spesielle, og hvordan du finner oss.">
     <title>Om oss</title>
+    <link rel="icon" href="Bilder/glasur-logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
   <header>
-    <h1>glaSUR Bakeri</h1>
+    <div class="brand">
+      <img src="Bilder/glasur-logo.png" alt="" class="header-logo">
+      <h1>glaSUR Bakeri</h1>
+    </div>
     <nav>
       <a href="index.html">Hjem</a>
       <a href="Meny.html">Meny</a>
@@ -25,7 +32,7 @@
 
   <section>
     <h2>Vår historie</h2>
-    <img src="Bilder/glasur-om-oss.jpg" alt="GlaSUR Bakeri" class="omoss-bilde">
+    <img src="Bilder/glasur-om-oss.jpg" alt="GlaSUR Bakeri" class="omoss-bilde" loading="lazy">
     <p>GlaSUR Bakeri ble grunnlagt med én ting i tankene — å bringe ekte dansk bakverk til Roa. Vi baker alt fra bunnen av hver morgen, med oppskrifter som har gått i arv i generasjoner.</p>
   </section>
 
@@ -36,15 +43,15 @@
 
   <section>
     <h2>Besøk oss</h2>
-   <p>📍 Garverivegen 4, Lunner, 2740</p>
-  <p>📞 +47 929 91 095</p>
-  <p>📧 post@glasurbakeri.no</p>
+   <p><span aria-hidden="true">📍</span> <span class="sr-only">Adresse:</span> Garverivegen 4, Lunner, 2740</p>
+  <p><span aria-hidden="true">📞</span> <span class="sr-only">Telefon:</span> +47 929 91 095</p>
+  <p><span aria-hidden="true">📧</span> <span class="sr-only">E-post:</span> post@glasurbakeri.no</p>
   </section>
 </main>
 <footer>
-  <a href="https://facebook.com/glasur" target="_blank">Facebook</a>
-  <a href="https://instagram.com/glasur" target="_blank">Instagram</a>
   <p>© 2026 glaSUR Bakeri</p>
+  <a href="https://www.facebook.com/profile.php?id=61575648731493" target="_blank" rel="noopener noreferrer">Facebook</a>
+  <a href="https://www.instagram.com/glasur.bakeri/" target="_blank" rel="noopener noreferrer">Instagram</a>
 </footer>
 </body>
 </html>
