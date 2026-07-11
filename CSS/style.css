@@ -57,6 +57,23 @@ header.over-hero.is-solid {
     gap: 12px;
 }
 
+/* Merkevaren øverst er en lenke tilbake til forsiden */
+a.brand {
+    text-decoration: none;
+    color: inherit;
+    border-radius: 8px;
+    transition: opacity 0.2s ease;
+}
+
+a.brand:hover {
+    opacity: 0.85;
+}
+
+a.brand:focus-visible {
+    outline: 2px solid #f5f0eb;
+    outline-offset: 4px;
+}
+
 .header-logo {
     width: 48px;
     height: 48px;
