@@ -387,7 +387,7 @@ a:focus-visible {
 .hero-full__bg {
   position: absolute;
   inset: 0;
-  background-image: url('../Bilder/hero.svg');
+  background-image: url('../Bilder/hero.png');
   background-size: cover;
   background-position: center;
   transform: scale(1.12);
@@ -402,7 +402,7 @@ a:focus-visible {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(59, 31, 14, 0.55), rgba(59, 31, 14, 0.35) 45%, rgba(59, 31, 14, 0.8));
+  background: linear-gradient(180deg, rgba(59, 31, 14, 0.62), rgba(59, 31, 14, 0.5) 45%, rgba(59, 31, 14, 0.84));
 }
 
 .hero-full__content {
@@ -430,6 +430,7 @@ a:focus-visible {
   margin: 0 auto 28px;
   max-width: 520px;
   color: #f3e8dc;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
 }
 
 .hero-full .knapp {
