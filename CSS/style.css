@@ -17,7 +17,7 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Quicksand', 'Segoe UI', sans-serif;
     letter-spacing: 0.3px;
     line-height: 1.2;
@@ -710,6 +710,96 @@ section[id] {
 .produkt-kort p {
   margin: 0 18px 18px;
   color: #5a4636;
+}
+
+/* ---- Menyside ---- */
+/* Sentrert CTA under produktrutenettet ("Se full meny") */
+.meny-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+/* Kategorier uten produktfoto (kafé, catering) */
+.meny-kategorier {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.meny-kategori {
+  background: var(--krem);
+  border-left: 4px solid var(--gul);
+  border-radius: 12px;
+  padding: 18px 20px;
+}
+.meny-kategori h3 {
+  margin: 0 0 4px;
+}
+.meny-kategori p {
+  margin: 0;
+  color: #5a4636;
+}
+
+/* Menygruppe: én kategori i prislisten (Brød, Søtt bakverk, Kaker …) */
+.menygruppe + .menygruppe {
+  margin-top: 30px;
+}
+.menygruppe__tittel {
+  margin: 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--gul);
+  color: var(--brun-mork);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Prisliste: vare til venstre, pris til høyre */
+.prisliste {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.prisrad {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 0;
+  border-bottom: 1px dashed #e7dccd;
+}
+.prisrad:last-child {
+  border-bottom: none;
+}
+.prisrad__vare h4 {
+  margin: 0 0 2px;
+  font-size: 1.05rem;
+}
+.prisrad__vare p {
+  margin: 0;
+  color: #5a4636;
+  font-size: 0.95rem;
+}
+.prisrad .pris {
+  white-space: nowrap;
+  font-size: 1.05rem;
+}
+
+.meny-note {
+  margin-top: 20px;
+  color: #6b5847;
+  font-size: 0.95rem;
+}
+.meny-note .kontakt-lenke {
+  color: var(--brun);
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 /* ---- Bestillingsskjema ---- */

@@ -34,9 +34,11 @@ document.addEventListener('DOMContentLoaded', function () {
     onScroll();
   }
 
-  // 3) Myk scroll til toppen når man klikker logo/navn
+  // 3) Myk scroll til toppen når man klikker logo/navn.
+  //    Kun når lenken peker på et anker på samme side – på undersider
+  //    peker den til index.html og må få navigere som vanlig.
   var brand = document.querySelector('a.brand');
-  if (brand) {
+  if (brand && (brand.getAttribute('href') || '').charAt(0) === '#') {
     brand.addEventListener('click', function (e) {
       e.preventDefault();
       var reduser = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
